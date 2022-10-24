@@ -89,8 +89,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
     padding: 1em 1em;
 }
 
-.slideLogoDiv{
-
+.HomeLogo {
     position: relative;
     right: 900px;
     bottom: 90px;
@@ -100,16 +99,16 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
     width: 4%;
     height: auto;
     opacity: 0.95;
-
 }
 
 
+
 .slideLogoDiv2{
-    display: block;
+    display:block;
     width: 10%;
     height: auto;
     margin: 0;
-    margin-left: 50%;
+    margin-left: 51%;
     transform: translateX(-200%);
     opacity: 0;
     animation: slide-in-anim2 2s ease-out forwards;
