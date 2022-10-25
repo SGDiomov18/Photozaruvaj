@@ -43,10 +43,18 @@
 
 
   <div class="slideDiv2">
-    <p class="text2">CONTACT</p>
+    <p class="text2" id="ContactDisappear">CONTACT</p>
   </div>
 
 
+  <script>
+    setTimeout(function()
+    {
+      var contact = document.getElementById("ContactDisappear");
+      contact.parentNode.removeChild(contact);
+    }, 2500);
+
+  </script>
 
 
   <div class = "Copyright">

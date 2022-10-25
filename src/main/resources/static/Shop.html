@@ -43,11 +43,18 @@
 
 
   <div class="slideDiv2">
-    <p class="text2">SHOP</p>
+    <p class="text2" id = "ShopDisappear">SHOP</p>
   </div>
 
 
+  <script>
+    setTimeout(function()
+    {
+      var shop = document.getElementById("ShopDisappear");
+      shop.parentNode.removeChild(shop);
+    }, 2500);
 
+  </script>
 
   <div class = "Copyright">
     &#169; COPYRIGHT 2022
