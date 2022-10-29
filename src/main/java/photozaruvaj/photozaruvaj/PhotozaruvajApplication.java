@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class PhotozaruvajApplication {
 
     public static void main(String[] args) {
+
         SpringApplication.run(PhotozaruvajApplication.class, args);
     }
 
