@@ -16,6 +16,7 @@ section{
     align-items: center;
 }
 
+
 .ScrollDown{
     font-size:30px;
 
@@ -35,7 +36,7 @@ section:nth-child(4){
     background: #e0ffff;
 }
 section .container{
-    margin: 100px;
+    margin: 10px;
 }
 section h1{
     font-size: 3rem;
@@ -50,9 +51,13 @@ section .text-container{
     display: flex;
 }
 section .text-container .text-box{
-    margin: 20px;
-    padding: 20px;
-    background: #00c2cb;
+    position:relative;
+    bottom: 100px;
+    margin: auto;
+    width: 50%;
+
+    padding: 10px;
+
 }
 section .text-container .text-box h3{
     font-size: 30px;
@@ -174,7 +179,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 .HomeLogo {
     position: relative;
     right: 900px;
-    bottom: 115px;
+    bottom: 90px;
     display: block;
     margin-left: auto;
     margin-right: auto;

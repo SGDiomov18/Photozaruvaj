@@ -20,7 +20,7 @@ section{
 
 .ScrollDown{
     font-size:30px;
-
+    font-family: Raleway;
 }
 section:nth-child(1){
     color: #e0ffff;
@@ -175,7 +175,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 .HomeLogo {
     position: relative;
     right: 900px;
-    bottom: 115px;
+    bottom: 90px;
     display: block;
     margin-left: auto;
     margin-right: auto;
