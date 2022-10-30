@@ -8,8 +8,15 @@ padding: 0;
 box-sizing: border-box;
 font-family: Raleway;
 }
-section{
+.section1{
     background: #42455a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2{
+    background: #ffffff;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -24,6 +31,7 @@ section{
 section:nth-child(1){
     color: #e0ffff;
 }
+
 section:nth-child(2){
     color: #42455a;
     background: #e0ffff;
@@ -279,6 +287,53 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
         opacity: 1;
         transform: translateX(-50%);
     }
+}
+
+
+.HoverExpand{
+    position:relative;
+    bottom:100px;
+    text-align:center;
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.BigBox{
+    position:relative;
+    bottom: 150px;
+    text-align:center;
+    width: 1000px;
+    height: auto;
+    background: #fff;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0;
+    overflow: hidden;
+    box-shadow: 3px 3px gray;
+
+}
+
+.SmallBox{
+
+    transition: 0.2s;
+
+
+}
+
+.SmallBox:hover{
+    transform: scale(1.1);
+
+    z-index: 2;
+
+
 }
 
 
