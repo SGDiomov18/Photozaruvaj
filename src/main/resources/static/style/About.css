@@ -6,25 +6,46 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Asap", sans-serif;
+    font-family: Raleway;
 }
-
-
-section{
-    background: #42455a;
+.section1{
+    background: #fff;
+    text: #151515;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.section2{
+    background: #151515;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    marging:0;
+    overflow:hidden;
+}
+.AboutInfoDiv{
+    transform: translateY(20%);
+    width: 800px;
+    height: 500px;
+    text-align: center;
+}
+#ContactHref{
+    font-size: 60px;
 
+    color: #ac1329;
+}
 .ScrollDown{
     font-size:30px;
-    font-family: Raleway;
+
 }
 section:nth-child(1){
     color: #e0ffff;
 }
+
 section:nth-child(2){
     color: #42455a;
     background: #e0ffff;
@@ -37,7 +58,7 @@ section:nth-child(4){
     background: #e0ffff;
 }
 section .container{
-    margin: 100px;
+    margin: 10px;
 }
 section h1{
     font-size: 3rem;
@@ -52,9 +73,13 @@ section .text-container{
     display: flex;
 }
 section .text-container .text-box{
-    margin: 20px;
-    padding: 20px;
-    background: #00c2cb;
+    position:relative;
+    bottom: 100px;
+    margin: auto;
+    width: 50%;
+
+    padding: 10px;
+
 }
 section .text-container .text-box h3{
     font-size: 30px;
@@ -84,6 +109,7 @@ section .text-container .text-box h3{
     transform: translateY(0);
     opacity: 1;
 }
+
 
 .Copyright
 {
@@ -184,6 +210,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
     opacity: 1;
 }
 
+
 .slideLogoDiv2{
     display: block;
     width: 10%;
@@ -212,7 +239,6 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 
 .text2{
     font-family: 'Raleway';
-
     background: -webkit-linear-gradient(#7b63b4, #23537e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -223,7 +249,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
     margin-left: 50%;
     transform: translateX(-200%);
     opacity: 0;
-    animation: slide-in-anim2 1.5s ease-out forwards;
+    animation: slide-in-anim2 1s ease-out forwards;
 }
 
 
@@ -278,6 +304,67 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 }
 
 
+.HoverExpand{
+    position:relative;
+    bottom:100px;
+    text-align:center;
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.BigBox1{
+    transform: translateY(-42%);
+    text-align:center;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0;
+    overflow: hidden;
+    margin: 0;
+    height: 100%;
+
+}
+
+.BigBox2{
+    transform: translateY(-28%);
+    text-align:center;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0;
+    overflow: hidden;
+
+
+}
+
+
+.SmallBox{
+
+    transition: 0.2s;
+
+
+}
+
+.SmallBox:hover{
+    transform: scale(1.1);
+
+    z-index: 2;
+
+
+}
+
+.ContactImages{
+    transform: translateY(-12%);
+}
 
 
 

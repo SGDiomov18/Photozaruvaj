@@ -9,19 +9,22 @@ box-sizing: border-box;
 font-family: Raleway;
 }
 .section1{
-    background: #42455a;
+    background: #fff;
+    text: #151515;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .section2{
-    background: #ffffff;
+    background: #151515;
+    color: #fff;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 
 
 .ScrollDown{
@@ -235,7 +238,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
     margin-left: 50%;
     transform: translateX(-200%);
     opacity: 0;
-    animation: slide-in-anim2 1.5s ease-out forwards;
+    animation: slide-in-anim2 1s ease-out forwards;
 }
 
 
@@ -303,13 +306,10 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 }
 
 
-.BigBox{
-    position:relative;
-    bottom: 150px;
+.BigBox1{
+    transform: translateY(-42%);
     text-align:center;
-    width: 1000px;
     height: auto;
-    background: #fff;
     display: flex;
     padding: 20px;
     flex-direction: row;
@@ -317,9 +317,25 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
     border-radius: 10px;
     margin: 0;
     overflow: hidden;
-    box-shadow: 3px 3px gray;
+
 
 }
+
+.BigBox2{
+    transform: translateY(-28%);
+    text-align:center;
+    height: auto;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 10px;
+    margin: 0;
+    overflow: hidden;
+
+
+}
+
 
 .SmallBox{
 
@@ -336,7 +352,9 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 
 }
 
-
+.ContactImages{
+    transform: translateY(-12%);
+}
 
 
 

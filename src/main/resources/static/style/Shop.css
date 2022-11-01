@@ -225,7 +225,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
     margin-left: 50%;
     transform: translateX(-200%);
     opacity: 0;
-    animation: slide-in-anim2 1.5s ease-out forwards;
+    animation: slide-in-anim2 1s ease-out forwards;
 }
 
 
