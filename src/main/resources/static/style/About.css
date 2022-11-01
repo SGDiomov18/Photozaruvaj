@@ -215,7 +215,16 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
     width: 6%;
     height: auto;
     opacity: 1;
+    transition: 0.2s;
+
 }
+.HomeLogo:hover{
+
+    transform: scale(1.1);
+
+}
+
+
 
 
 .slideLogoDiv2{

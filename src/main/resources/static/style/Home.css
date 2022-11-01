@@ -23,7 +23,7 @@ html,body{
 div.container
 {
     position: relative;
-    left: 10px;
+    left: 2px;
     font-family: Raleway;
     margin: 0 auto;
     padding: 2em 1em;
@@ -109,6 +109,13 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
     width: 5.9%;
     height: auto;
     opacity: 1;
+    transition: 0.2s;
+}
+
+.HomeLogo:hover{
+
+    transform: scale(1.1);
+
 }
 
 
