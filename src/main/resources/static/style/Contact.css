@@ -11,15 +11,15 @@ font-family: Raleway;
 .section1{
     background: #fff;
     text: #151515;
-    min-height: 100vh;
+    min-height: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .section2{
-    background: #151515;
+    background: #202020;
     color: #fff;
-    min-height: 100vh;
+    min-height: 120vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -310,32 +310,43 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
     transform: translateY(-42%);
     text-align:center;
     height: auto;
-    display: flex;
+
     padding: 20px;
     flex-direction: row;
     justify-content: center;
     border-radius: 10px;
     margin: 0;
     overflow: hidden;
+    display: inline-block;
 
 
 }
 
 .BigBox2{
-    transform: translateY(-28%);
+    transform: translateY(-18%);
     text-align:center;
     height: auto;
-    display: flex;
-    padding: 20px;
+    padding: 10px;
     flex-direction: row;
     justify-content: center;
     border-radius: 10px;
     margin: 0;
     overflow: hidden;
+    display: inline-block;
+    width: 100%;
+
+
 
 
 }
 
+
+.SmallBox1{
+
+     transition: 0.2s;
+     transform: translateY(2%);
+
+ }
 
 .SmallBox{
 
@@ -351,11 +362,48 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 
 
 }
+.SmallBox1:hover{
+    transform: scale(1.1);
 
-.ContactImages{
-    transform: translateY(-12%);
+    z-index: 2;
+
+
 }
 
+
+.ContactImages1{
+
+
+
+}
+
+.ContactImages{
+
+
+
+}
+
+.ContactImages:hover{
+
+
+    animation: Images 1s ease;
+}
+
+.ContactImages1:hover{
+
+    transform: translateY(-5%);
+    animation: Images 1s ease;
+}
+
+@keyframes Images {
+
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
 
 
 

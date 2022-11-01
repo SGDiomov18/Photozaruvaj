@@ -11,33 +11,40 @@
 .section1{
     background: #fff;
     text: #151515;
-    min-height: 100vh;
+    min-height: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+
 }
 .section2{
-    background: #151515;
+    background: #202020;
     color: #fff;
-    min-height: 100vh;
+    min-height: 120vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    marging:0;
-    overflow:hidden;
+
 }
+
 .AboutInfoDiv{
     transform: translateY(20%);
     width: 800px;
     height: 500px;
     text-align: center;
 }
-#ContactHref{
+#HrefExplore{
     font-size: 60px;
-
     color: #ac1329;
 }
+
+#HreftContact
+{
+    font-size: 60px;
+    color: #ac1329;
+}
+
 .ScrollDown{
     font-size:30px;
 
@@ -323,28 +330,24 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
     padding: 20px;
     flex-direction: row;
     justify-content: center;
-    border-radius: 10px;
-    margin: 0;
     overflow: hidden;
-    margin: 0;
     height: 100%;
 
 }
 
+
 .BigBox2{
-    transform: translateY(-28%);
+    position:relative;
+    left: 25px;
     text-align:center;
-    height: auto;
-    display: flex;
     padding: 20px;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    border-radius: 10px;
-    margin: 0;
     overflow: hidden;
-
-
+    height: 100%;
+    width: 1300px;
 }
+
 
 
 .SmallBox{
@@ -366,6 +369,48 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
     transform: translateY(-12%);
 }
 
+
+.PlaneSymbol{
+
+    position:relative;
+    top:18px;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+.MessageSymbol{
+
+    position:relative;
+    top:18px;
+    transform-origin: center;
+    transform-box: fill-box;
+
+}
+
+.PlaneSymbol:hover{
+
+    animation: SymbolAnimation 0.85s ease;
+
+}
+.MessageSymbol:hover{
+    animation: SymbolAnimation 0.85s ease;
+
+
+}
+
+@keyframes SymbolAnimation {
+    from{
+        transform: rotate(0deg)
+    }
+    to{
+        transform: rotate(360deg)
+    }
+}
+
+.AirPocket{
+    height: 20px;
+
+}
 
 
 
