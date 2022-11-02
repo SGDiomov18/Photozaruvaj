@@ -15,6 +15,7 @@ font-family: Raleway;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow:hidden;
 }
 .section2{
     background: #202020;
