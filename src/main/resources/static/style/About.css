@@ -381,12 +381,21 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 }
 
 
-.PlaneSymbol{
+.PlaneSymbolDiv{
 
-    position:relative;
-    top:18px;
+}
+
+.MessageSymbolDiv{
+
+}
+
+
+.PlaneSymbol{
+    position: relative;
+    top: 18px;
     transform-origin: center;
     transform-box: fill-box;
+
 }
 
 .MessageSymbol{
@@ -398,16 +407,19 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 
 }
 
-.PlaneSymbol:hover{
-
+.PlaneSymbolDiv:hover
+    .PlaneSymbol{
     animation: SymbolAnimation 0.85s ease;
+    }
 
-}
-.MessageSymbol:hover{
+.MessageSymbolDiv:hover
+    .MessageSymbol{
     animation: SymbolAnimation 0.85s ease;
-
-
 }
+
+
+
+
 
 @keyframes SymbolAnimation {
     from{
