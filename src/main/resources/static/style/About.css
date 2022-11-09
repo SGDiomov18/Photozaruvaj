@@ -30,7 +30,7 @@
 }
 
 .AboutInfoDiv{
-    transform: translateY(20%);
+    transform: translateY(10%);
     width: 800px;
     height: 500px;
     text-align: center;
@@ -335,7 +335,9 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 
 
 .BigBox1{
-    transform: translateY(-42%);
+    transform: translateY(-25%);
+
+
     text-align:center;
     padding: 20px;
     flex-direction: row;
@@ -396,6 +398,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
     transform-origin: center;
     transform-box: fill-box;
 
+
 }
 
 .MessageSymbol{
@@ -410,6 +413,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 .PlaneSymbolDiv:hover
     .PlaneSymbol{
     animation: SymbolAnimation 0.85s ease;
+
     }
 
 .MessageSymbolDiv:hover
