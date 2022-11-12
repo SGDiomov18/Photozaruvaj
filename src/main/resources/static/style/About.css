@@ -7,9 +7,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Raleway;
+
+
+
 }
+
+backgroundImage{
+
+    top: -10vh;
+    position: absolute;
+    pointer-events: none;
+    z-index: -2;
+    margin: 0;
+}
+
 .section1{
-    background: #fff;
+
     text: #151515;
     min-height: 110vh;
     display: flex;
@@ -251,7 +264,7 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
     margin-left: 50%;
     transform: translateX(-200%);
     opacity: 0;
-    animation: slide-in-anim 1.5s ease-out forwards;
+    animation: slide-in-anim 1.5s ease-out;
 }
 
 .text2{
@@ -277,14 +290,14 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
         opacity: 0;
     }
     60% {
-        transform: translateX(-45%);
+        transform: translateY(-45%);
     }
     75% {
-        transform: translateX(-52%);
+        transform: translateY(-52%);
     }
     100% {
         opacity: 1;
-        transform: translateX(-50%);
+        transform: translateY(-50%);
     }
 }
 
@@ -439,6 +452,78 @@ div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 
 }
 
+
+
+.getSvgIcon:hover
+#Layer_3 {
+    animation: SvgAnimation1 0.55s ease;
+}
+
+
+.getSvgIcon:hover
+#Layer_4 {
+    animation: SvgAnimation2 0.55s ease;
+}
+
+
+.getSvgIcon:hover
+#Layer_5{
+    animation: SvgAnimation3 0.55s ease;
+}
+
+
+
+
+#Layer_3{
+
+}
+#Layer_4{
+
+}
+
+#Layer_5{
+
+}
+
+
+@keyframes SvgAnimation1 {
+    from {
+
+        transform: translateX(0%);
+        transform: translateY(0%);
+    }
+
+
+    to{
+        transform: translateX(10%);
+        transform: translateY(10%);
+    }
+
+}
+
+
+@keyframes SvgAnimation2 {
+    from {
+
+        transform: translateX(0%);
+    }
+
+
+    to{
+        transform: translateX(10%);
+    }
+
+}
+
+@keyframes SvgAnimation3 {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(10%);
+    }
+
+}
 
 
 
