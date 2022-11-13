@@ -12,7 +12,8 @@
 
 }
 
-backgroundImage{
+
+. backgroundImage{
 
     top: -10vh;
     position: absolute;
@@ -22,7 +23,7 @@ backgroundImage{
 }
 
 .section1{
-
+    background: #fff;
     text: #151515;
     min-height: 110vh;
     display: flex;
@@ -132,16 +133,7 @@ section .text-container .text-box h3{
 }
 
 
-.Copyright
-{
-    font-family: Asap;
-    position:fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    font-size: 17px;
-    color: #000;
-}
+
 
 div.container
 {

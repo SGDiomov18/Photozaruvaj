@@ -17,6 +17,30 @@ html,body{
 
 }
 
+.TEST{
+    font-size: 50px;
+    color: #b9afbc;
+    font-family: Raleway;
+    transform: translateX(20%) translateY(10%) rotate(1.8deg);
+    text-shadow: .1em .1em 0 hsla(9, 4%, 37%, 0.45);
+
+}
+.TEST2{
+
+    color: #8d888d;
+    font-family: Raleway;
+    font-size: 100px;
+    transform: translateX(10%) translateY(10%) rotate(1.8deg);
+    text-shadow: .1em .1em 0 hsla(9, 4%, 37%, 0.45);
+
+}
+.hr{
+    position: relative;
+    transform: rotate(1.8deg) translateX(-50%);
+    width: 600px;
+
+}
+
 
 
 video{
@@ -24,11 +48,14 @@ video{
     top: -10vh;
     position: absolute;
     pointer-events: none;
-    z-index: -1;
+    z-index: -2;
     margin: 0;
 }
+
+
 div.container
 {
+
     position: relative;
     left: 2px;
     font-family: Raleway;
@@ -42,10 +69,9 @@ div.container
 
 }
 
-
-
 div.container a
 {
+
     color: #000;
     text-decoration: none;
     font: 20px Raleway;
