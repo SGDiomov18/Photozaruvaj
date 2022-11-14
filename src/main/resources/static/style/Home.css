@@ -4,8 +4,12 @@
 
 html,body{
     margin:0;
-    overflow:hidden;
 
+}
+.something{
+    height: 1900px;
+    width: 1000px;
+    background-image: url("static/img/Background.jpg");
 }
 
 .BackgroundImage{
@@ -16,24 +20,39 @@ html,body{
     z-index: -1;
 
 }
+.HeadingDiv{
+    transform: translateX(110px) translateY(150px);
+}
+.Heading1{
+    font-size: 150px;
 
-.TEST{
-    font-size: 50px;
-    color: #b9afbc;
-    font-family: Raleway;
-    transform: translateX(20%) translateY(10%) rotate(1.8deg);
-    text-shadow: .1em .1em 0 hsla(9, 4%, 37%, 0.45);
 
 }
-.TEST2{
 
-    color: #8d888d;
-    font-family: Raleway;
-    font-size: 100px;
-    transform: translateX(10%) translateY(10%) rotate(1.8deg);
-    text-shadow: .1em .1em 0 hsla(9, 4%, 37%, 0.45);
+.Heading2{
+    font-size:130px;
 
 }
+.ButtonReadMore{
+    background-color: #f4bd38;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 30px;
+    transform: translateY(30px);
+
+}
+
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+
+
 .hr{
     position: relative;
     transform: rotate(1.8deg) translateX(-50%);
@@ -50,7 +69,27 @@ video{
     pointer-events: none;
     z-index: -2;
     margin: 0;
+    animation: VideoAnimation 3s forwards;
+    animation-delay: 3.5s;
+
 }
+
+@keyframes VideoAnimation {
+    from{
+        opacity: 1;
+        filter:blur(0px);
+
+
+        
+    }
+    to{
+        opacity: 0.7;
+        filter:blur(8px);
+
+    }
+    
+}
+
 
 
 div.container
