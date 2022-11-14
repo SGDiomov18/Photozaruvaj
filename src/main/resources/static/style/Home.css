@@ -4,13 +4,10 @@
 
 html,body{
     margin:0;
+    overflow: hidden;
+    height: 100%;
+}
 
-}
-.something{
-    height: 1900px;
-    width: 1000px;
-    background-image: url("static/img/Background.jpg");
-}
 
 .BackgroundImage{
 
@@ -42,8 +39,14 @@ html,body{
     display: inline-block;
     font-size: 16px;
     border-radius: 30px;
-    transform: translateY(30px);
+    top: 10px;
+    transition: 0.2s;
+    position:relative;
+}
 
+.ButtonReadMore:hover{
+
+    transform: scale(1.1);
 }
 
 a{
