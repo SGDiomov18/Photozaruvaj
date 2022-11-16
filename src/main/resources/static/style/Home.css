@@ -9,14 +9,7 @@ html,body{
 }
 
 
-.BackgroundImage{
 
-    display: flex;
-    margin-right: auto;
-    margin-left: auto;
-    z-index: -1;
-
-}
 .HeadingDiv{
     transform: translateX(140px) translateY(150px);
 }
@@ -26,6 +19,7 @@ html,body{
     opacity: 0;
     animation: HeadingAnimation 2s forwards;
     animation-delay: 4.5s;
+
 }
 
 
@@ -35,6 +29,7 @@ html,body{
     opacity: 0;
     animation: HeadingAnimation 2s forwards;
     animation-delay: 5s;
+
 }
 
 
@@ -77,13 +72,13 @@ a{
     font-size: 30px;
     color: white;
 }
-
-
 .hr{
-    transform: translateX(-650px);
-    width: 600px;
-    border-color: #202020;
+    transform: translateX(-720px) rotate(90deg);
+    width: 50px;
+    border-color: #ffffff;
 }
+
+
 
 
 

@@ -13,13 +13,14 @@
 }
 
 
-. backgroundImage{
-
-    top: -10vh;
+.BackgroundImage{
     position: absolute;
-    pointer-events: none;
-    z-index: -2;
     margin: 0;
+    padding: 0;
+    width: auto;
+
+    filter: blur(15px);
+
 }
 
 .section1{
