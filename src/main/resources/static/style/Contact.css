@@ -2,103 +2,18 @@
 @import url("https://fonts.googleapis.com/css?family=Signika+Negative:300,400&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: Raleway;
-}
 
-.section1{
-    background: #fff;
-    text: #151515;
-    min-height: 110vh;
-    display: flex;
-    justify-content: center;
+body {
+    display:flex;
+    height: 100vh;
+    background-color: rgb(20,20,20);
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
     align-items: center;
-    overflow:hidden;
-}
-.section2{
-    background: #202020;
-    color: #fff;
-    min-height: 120vh;
-    display: flex;
     justify-content: center;
-    align-items: center;
-}
 
 
-
-.ScrollDown{
-    font-size:30px;
-
-}
-section:nth-child(1){
-    color: #ffffff;
-}
-
-section:nth-child(2){
-    color: #42455a;
-    background: #ffffff;
-}
-section:nth-child(3){
-    color: #ffffff;
-}
-section:nth-child(4){
-    color: #42455a;
-    background: #ffffff;
-}
-section .container{
-    margin: 10px;
-}
-section h1{
-    font-size: 3rem;
-    margin: 20px;
-}
-section h2{
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
-}
-section .text-container{
-    display: flex;
-}
-section .text-container .text-box{
-    position:relative;
-    bottom: 100px;
-    margin: auto;
-    width: 50%;
-
-    padding: 10px;
-
-}
-section .text-container .text-box h3{
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-@media (max-width: 900px){
-    section h1{
-        font-size: 2rem;
-        text-align: center;
-    }
-    section .text-container{
-        flex-direction: column;
-    }
-}
-
-.reveal{
-    position: relative;
-    transform: translateY(150px);
-    opacity: 0;
-    transition: 1s all ease;
-}
-
-.reveal.active{
-    transform: translateY(0);
-    opacity: 1;
 }
 
 
@@ -106,15 +21,9 @@ section .text-container .text-box h3{
 
 div.container
 {
-    position: relative;
-    left: 10px;
-    font-family: Raleway;
-    margin: 0 auto;
-    padding: 2em 1em;
-    text-align: center;
-    height: 25px;
-    width: 1800px;
-    border-radius: 10px;
+    position: absolute;
+    bottom: 90%;
+
 
 }
 
@@ -122,29 +31,76 @@ div.container
 
 div.container a
 {
-    color: #000;
+    color: #c5c4c4;
     text-decoration: none;
-    font: 20px Raleway;
+    font-size: 20px;
+    font-family: Asap;
     margin: 0px 10px;
-    padding: 10px 10px;
+    padding: 10px 30px;
     position: relative;
-    z-index: 0;
+    opacity: 0.5;
     cursor: pointer;
 
+}
+.HomeDiv{
+    position: absolute;
+    transform: translateX(-70px);
+    opacity: 0.05;
+}
+.ShopDiv{
+    position: absolute;
+    transform: translateX(60px);
+    opacity: 0.05;
+}
+.AboutDiv{
+    position: absolute;
+    transform: translateX(180px);
+    opacity: 0.05;
+}
+.ContactDiv{
+    position: absolute;
+    transform: translateX(300px);
+    opacity: 0.05;
+}
 
+.HomeDiv:hover{
+
+    animation: NavBarAnimation 0.3s ease-in-out forwards;
+}
+
+.ShopDiv:hover{
+    animation: NavBarAnimation 0.3s ease-in-out forwards;
+}
+
+.AboutDiv:hover{
+    animation: NavBarAnimation 0.3s ease-in-out forwards;
+}
+
+.ContactDiv:hover{
+    animation: NavBarAnimation 0.3s ease-in-out forwards;
+}
+
+@keyframes NavBarAnimation {
+    from{
+        opacity: 0.05;
+    }
+    to{
+        opacity: 0.7;
+    }
 }
 
 
 div.topBotomBordersIn a:before, div.topBotomBordersIn a:after
 {
     position: absolute;
-    left: 0px;
+    right: 50px;
     width: 100%;
     height: 2px;
-    background: #000;
+    background: #c5c4c4;
     content: "";
     opacity: 0;
     transition: all 0.3s;
+
 }
 
 div.topBotomBordersIn a:before
@@ -161,253 +117,227 @@ div.topBotomBordersIn a:after
 
 div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
 {
-    opacity: 0.9;
-    transform: translateY(0px);
+    opacity: 0.4;
+    transform: translateX(0px);
 }
-
-.slideDiv1{
-    width:100%;
-    padding: 7em 1em;
+input{
+    overflow:hidden;
+    display: none
 }
-.slideDiv2{
-    transform: translateY(100%);
-    width:100%;
-    padding: 1em 1em;
-}
-
-.slideDiv3
-{
-    padding: 1em 1em;
-}
-
-.HomeLogo {
-    position: relative;
-    right: 900px;
-    bottom: 90px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 6%;
-    height: auto;
-    opacity: 1;
-    transition: 0.2s;
-
-}
-.HomeLogo:hover{
-
-    transform: scale(1.1);
+.topHr{
+    position: absolute;
+    bottom: 80%;
+    width: 450px;
+    opacity: 0.1;
+    border-color: #c5c4c4;
+    margin: auto;
+    animation: TopLineAnimation 1s ease-in-out forwards;
 
 }
 
-
-.slideLogoDiv2{
-    display: block;
-    width: 10%;
-    height: auto;
-    margin: 0;
-    margin-left: 50%;
-    transform: translateX(-200%);
-    opacity: 0;
-    animation: slide-in-anim2 2s ease-out forwards;
+.bottomHr{
+    position: absolute;
+    top: 80%;
+    width: 450px;
+    opacity: 0.1;
+    border-color: #c5c4c4;
+    margin:auto;
+    animation: BottomLineAnimation 1s ease-in-out forwards;
 }
 
-
-
-
-.text1{
-    font-family: 'Raleway';
-    font-size: 50px;
-    text-align: center;
-    text-shadow: .1em .1em 0 hsla(9, 4%, 37%, 0.45);
-    margin: 0;
-    margin-left: 50%;
-    transform: translateX(-200%);
-    opacity: 0;
-    animation: slide-in-anim 1.5s ease-out forwards;
-}
-
-.text2{
-    font-family: 'Raleway';
-    background: -webkit-linear-gradient(#7b63b4, #23537e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 80px;
-    text-align: center;
-    text-shadow: .1em .10em 0 hsla(9, 4%, 37%, 0.45);
-    margin: 0;
-    margin-left: 50%;
-    transform: translateX(-200%);
-    opacity: 0;
-    animation: slide-in-anim2 1s ease-out forwards;
-}
-
-
-
-
-@keyframes slide-in-anim {
-    20% {
-        opacity: 0;
-    }
-    60% {
-        transform: translateX(-45%);
-    }
-    75% {
-        transform: translateX(-52%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(-50%);
-    }
-}
-
-@keyframes slide-in-anim2 {
-    30% {
-        opacity: 0;
-    }
-    75% {
-        transform: translateX(-45%);
-    }
-    90% {
-        transform: translateX(-52%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(-50%);
-    }
-}
-
-@keyframes slide-in-anim3 {
-    40% {
-        opacity: 0;
-    }
-    85% {
-        transform: translateX(-45%);
-    }
-    95% {
-        transform: translateX(-52%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(-50%);
-    }
-}
-
-
-.HoverExpand{
-    position:relative;
-    bottom:100px;
-    text-align:center;
-    width: 90%;
-    padding: 20px;
-    margin: 100px auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
-.BigBox1{
-    transform: translateY(-42%);
-    text-align:center;
-    height: auto;
-
-    padding: 20px;
-    flex-direction: row;
-    justify-content: center;
-    border-radius: 10px;
-    margin: 0;
-    overflow: hidden;
-    display: inline-block;
-
-
-}
-
-.BigBox2{
-    transform: translateY(-18%);
-    text-align:center;
-    height: auto;
-    padding: 10px;
-    flex-direction: row;
-    justify-content: center;
-    border-radius: 10px;
-    margin: 0;
-    overflow: hidden;
-    display: inline-block;
-    width: 100%;
-
-
-
-
-}
-
-
-.SmallBox1{
-
-     transition: 0.2s;
-     transform: translateY(2%);
-
- }
-
-.SmallBox{
-
-    transition: 0.2s;
-
-
-}
-
-.SmallBox:hover{
-    transform: scale(1.1);
-
-    z-index: 2;
-
-
-}
-.SmallBox1:hover{
-    transform: scale(1.1);
-
-    z-index: 2;
-
-
-}
-
-. AirPocket{
-    width: 100px;
-    height: 100px;
-
-}
-.ContactImages1{
-
-
-
-}
-
-.ContactImages{
-
-
-
-}
-
-.ContactImages:hover{
-
-
-    animation: Images 1s ease;
-}
-
-.ContactImages1:hover{
-
-    transform: translateY(-5%);
-    animation: Images 1s ease;
-}
-
-@keyframes Images {
-
+@keyframes TopLineAnimation {
     from{
-        transform: rotate(0deg);
+        transform: translateX(1500px);
     }
     to{
-        transform: rotate(360deg);
+        transform: translateX(0px);
     }
 }
+
+@keyframes BottomLineAnimation {
+    from{
+        transform: translateX(-1500px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+#cards{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 916px;
+    gap: 70px;
+    width: calc(100% - 20px);
+    justify-content: center;
+    transform: scale(0.7);
+}
+
+
+
+.card{
+    height: 200px;
+    width: 250px;
+    background-color: rgba(255,255,255, 0.02);
+    border: 1px solid rgba(255,255,255, 0.05);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+
+
+}
+
+button{
+    height: 200px;
+    width: 250px;
+    background-color: rgba(255,255,255, 0.009);
+    border: 1px solid rgba(255,255,255, 0.05);
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+
+}
+
+.gitHub{
+    transform: scale(0.59);
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    z-index: 2;
+
+}
+.faceBook{
+    transform: scale(0.59);
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+
+}
+.linkedIn{
+    position: relative;
+    transform: scale(0.49);
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+
+}
+.instaGram{
+    position: relative;
+    transform: scale(0.52);
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+
+
+}
+.eMail{
+
+    transform: scale(0.59);
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.disCord{
+    display: inline-block;
+    vertical-align: middle;
+    transform: scale(0.59);
+    height: 100%;
+
+
+}
+
+.card:hover{
+    animation: cardAnimation 0.2s forwards;
+    opacity: 1;
+}
+
+@keyframes cardAnimation {
+    from{
+        transform: scale(1);
+        background-color: rgba(255,255,255, 0.02);
+        border: 1px solid rgba(255,255,255, 0.05);
+
+    }
+    to{
+        transform: scale(1.1);
+        background-color: rgba(255,255,255, 0.06);
+        border: 1px solid rgba(255,255,255, 0.09);
+
+    }
+
+}
+.gitHub:hover{
+    animation: imgAnimation 0.7s forwards;
+
+}
+.faceBook:hover{
+    animation: imgAnimation 0.7s forwards;
+}
+
+.linkedIn:hover{
+    animation: imgAnimation2 0.7s;
+}
+
+.instaGram:hover{
+    animation: imgAnimation3 0.9s;
+}
+
+.eMail:hover{
+    animation: imgAnimation 0.7s forwards;
+}
+
+.disCord:hover{
+    animation: imgAnimation 0.7s forwards;
+}
+
+@keyframes imgAnimation {
+
+    from{
+        height: 100%;
+        transform: rotate(0deg) scale(0.59);
+        filter: motionBlur(0px);
+    }
+
+    to{
+        height: 100%;
+        transform: rotate(360deg) scale(0.59);
+        filter: motionBlur(5px);
+    }
+
+}
+
+
+@keyframes imgAnimation2 {
+
+    from{
+        height: 100%;
+        transform: rotate(0deg) scale(0.49);
+    }
+
+    to{
+        height: 100%;
+        transform: rotate(360deg) scale(0.49);
+    }
+
+}
+@keyframes imgAnimation3 {
+
+    from{
+        height: 100%;
+        transform: rotate(0deg) scale(0.52);
+    }
+
+    to{
+        height: 100%;
+        transform: rotate(360deg) scale(0.52);
+    }
+
+}
+
 
 
 

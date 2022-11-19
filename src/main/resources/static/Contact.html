@@ -16,100 +16,49 @@
 
 
   <div class="container topBotomBordersIn">
-    <a href="index.html">HOME</a>
-    <a href="Shop.html">SHOP</a>
-    <a href="About.html">ABOUT</a>
-    <a href="Contact.html">CONTACT</a>
-    <a href ="test.html">test</a>
-  </div>
+    <a href="index.html"><div class="HomeDiv"> HOME  </div></a>
+    <a href="Shop.html"> <div class="ShopDiv"> SHOP   </div></a>
+    <a href="About.html"><div class="AboutDiv"> ABOUT</div></a>
+    <a href="Contact.html"><div class="ContactDiv"> CONTACT</div></a>
 
-  <a href = "index.html">
-    <img src = "img/PhotozaruvajLogo.svg" class = "HomeLogo">
-  </a>
-
-
-
-  <div class="slideDiv2">
-    <p class="text2">CONTACT</p>
   </div>
 
 
-  <section class = "section1">
-    <h1 class = "ScrollDown">Scroll Down &#8595;</h1>
-  </section>
+
+  <hr class = "topHr">
 
 
+  <input value="DoNotDisturb#2564" id = "myInput">
+  <div id = "cards">
+
+    <div class = "card"><a href ="https://github.com/SGDiomov18"> <img src = "img/GitHub.png" class = "gitHub"> </a></div>
+    <div class = "card"> <a href="https://www.facebook.com/stefan.diomov.9"> <img src = "img/FacebookIcon.png" class = "faceBook"> </a></div>
+    <div class = "card"> <img src = "img/email.png" class = "eMail"> </div>
+    <div class = "card"><a href = "https://www.linkedin.com/in/stefan-diomov-789672212/"> <img src = "img/LinkedIn.png" class = "linkedIn"> </a></div>
+    <div class = "card"><a href="https://www.instagram.com/diomovv_artx/"> <img src = "img/Instagram.png" class = "instaGram"></a> </div>
+    <div class = "card"> <button onclick = "myFunction()"><img src = "img/DiscordIcon.png" class = "disCord"></button> </div>
+
+  </div>
 
 
-  <section class = "section2">
-    <div class="container reveal">
-      <div class="text-container">
-        <div class="text-box">
-          <div class = "HoverExpand">
-            <p>
-            <p>
-              <div class = "SmallBox">
-            <div class = "BigBox1">
-            <h1>Instagram</h1>
+  <hr class = "bottomHr">
 
-                <a href="https://www.instagram.com/diomovv_artx/"><img src = "img/Instagram.png" width="105" height="100" class = "ContactImages"></a>
-            </div>
-          </div>
+  <script>
+    function myFunction() {
 
-            <div class = "SmallBox">
-              <div class = "BigBox1">
-                <h1>Facebook</h1>
-
-                <a href="https://www.facebook.com/stefan.diomov.9"><img src = "img/FacebookIcon.png" width="100" height="100" class = "ContactImages"></a>
-              </div>
-
-              </div>
-            </div>
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+      var copyText = document.getElementById("myInput");
 
 
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); // For mobile devices
 
 
-  <section class = "section1">
-    <div class="container reveal">
-      <div class="text-container">
-        <div class="text-box">
-          <div class = "HoverExpand">
-            <p>
-            <div class = "SmallBox">
-            <div class = "BigBox2">
-            <h1>LinkedIn</h1>
-            <a href = "https://www.linkedin.com/in/stefan-diomov-789672212/"><img src = "img/LinkedIn.png" width="100" height="100" class = "ContactImages"></a>
-            </div>
-            </div>
-            <div class = "AirPocket"> <h1></h1></div>
-            <div class = "SmallBox">
-              <div class = "BigBox2">
-            <h1>GitHub</h1>
-            <a href ="https://github.com/SGDiomov18"><img src = "img/GitHub.png" width="100" height="100" class = "ContactImages"></a>
-            </div>
-            </div>
-          </div>
-          </p>
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
+      navigator.clipboard.writeText(copyText.value);
 
 
-
-
-
-
-
-
-
+      alert("Copied the text: " + copyText.value);
+    }
+  </script>
 
 </body>
 
