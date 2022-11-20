@@ -80,8 +80,6 @@ a{
 
 
 
-
-
 video{
     width: 100%;
     top: -10vh;
@@ -110,14 +108,26 @@ video{
     
 }
 
+.wrapper{
+    position: absolute;
+}
 
+.topHr{
+    position: absolute;
+    bottom: 82%;
+    width: 450px;
+    opacity: 0.1;
+    border-color: #c5c4c4;
+    left: 750px;
+    animation: TopLineAnimation 1s ease-in-out forwards;
+
+}
 
 div.container
 {
-
     position: relative;
-    left: 2px;
-    font-family: Raleway;
+    right: 30px;
+    font-family: Asap;
     margin: 0 auto;
     padding: 2em 1em;
     text-align: center;
@@ -125,15 +135,15 @@ div.container
     width: 1800px;
     border-radius: 10px;
 
-
 }
+
+
 
 div.container a
 {
-
-    color: #000;
+    color: #3d3d3d;
     text-decoration: none;
-    font: 20px Raleway;
+    font: 20px Asap;
     margin: 0px 10px;
     padding: 10px 10px;
     position: relative;
@@ -144,35 +154,55 @@ div.container a
 }
 
 
-div.topBotomBordersIn a:before, div.topBotomBordersIn a:after
-{
+
+.HomeDiv{
     position: absolute;
-    left: 0px;
-    width: 100%;
-    height: 2px;
-    background: #000;
-    content: "";
-    opacity: 0;
-    transition: all 0.3s;
+    transform: translateX(800px);
+    opacity: 0.03;
+}
+.ShopDiv{
+    position: absolute;
+    transform: translateX(900px);
+    opacity: 0.03;
+}
+.AboutDiv{
+    position: absolute;
+    transform: translateX(1000px);
+    opacity: 0.03;
+}
+.ContactDiv{
+    position: absolute;
+    transform: translateX(1100px);
+    opacity: 0.03;
 }
 
-div.topBotomBordersIn a:before
-{
-    top: 0px;
-    transform: translateY(-10px);
+.HomeDiv:hover{
+
+    animation: NavBarAnimation 0.3s ease-in-out forwards;
 }
 
-div.topBotomBordersIn a:after
-{
-    bottom: 0px;
-    transform: translateY(10px);
+.ShopDiv:hover{
+    animation: NavBarAnimation 0.3s ease-in-out forwards;
 }
 
-div.topBotomBordersIn a:hover:before, div.topBotomBordersIn a:hover:after
-{
-    opacity: 0.9;
-    transform: translateY(0px);
+.AboutDiv:hover{
+    animation: NavBarAnimation 0.3s ease-in-out forwards;
 }
+
+.ContactDiv:hover{
+    animation: NavBarAnimation 0.3s ease-in-out forwards;
+}
+
+@keyframes NavBarAnimation {
+    from{
+        opacity: 0.05;
+    }
+    to{
+        opacity: 0.7;
+    }
+}
+
+
 
 .slideDiv1{
     position:relative;
