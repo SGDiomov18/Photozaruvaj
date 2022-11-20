@@ -351,19 +351,19 @@ input{
     }
 
 }
-.Home:hover {
-        animation: imgAnimation 0.7s forwards;
+.card:hover .Home{
+        animation: imgAnimation 0.85s forwards;
+ }
+
+.card:hover .Shop{
+    animation: imgAnimation 0.85s forwards;
 }
 
-.Shop:hover{
-    animation: imgAnimation 0.7s forwards;
+.card:hover .Info{
+    animation: imgAnimation 0.85s forwards;
 }
-
-.Info:hover{
-    animation: imgAnimation 0.7s forwards;
-}
-.Contact:hover{
-    animation: imgAnimation 0.7s forwards;
+.card:hover .Contact{
+    animation: imgAnimation 0.85s forwards;
 
 }
 
