@@ -155,7 +155,9 @@ input{
     gap: 70px;
     width: calc(100% - 20px);
     justify-content: center;
-    transform: scale(0.7);
+    opacity: 0;
+    transform: translateY(-200px) scale(0.7);
+    animation: CardAppearence 1.5s ease forwards;
     z-index: 1;
 }
 
@@ -175,6 +177,16 @@ input{
 
 }
 
+@keyframes CardAppearence {
+    from{
+        opacity: 0;
+        transform: translateY(-200px) scale(0.7);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0px) scale(0.7);
+    }
+}
 
 button{
     height: 200px;
