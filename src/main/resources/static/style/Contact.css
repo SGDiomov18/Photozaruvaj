@@ -151,7 +151,7 @@ input{
 #cards{
     display: flex;
     flex-wrap: wrap;
-    max-width: 916px;
+    max-width: 1500px;
     gap: 70px;
     width: calc(100% - 20px);
     justify-content: center;
@@ -165,7 +165,7 @@ input{
 
 .card{
     height: 200px;
-    width: 250px;
+    width: 400px;
     background-color: rgba(255,255,255, 0.02);
     border: 1px solid rgba(255,255,255, 0.05);
     border-radius: 10px;
@@ -190,7 +190,7 @@ input{
 
 button{
     height: 200px;
-    width: 250px;
+    width: 400px;
     background-color: rgba(255,255,255, 0.009);
     border: 1px solid rgba(255,255,255, 0.05);
     border-radius: 10px;
@@ -202,11 +202,11 @@ button{
 }
 
 .gitHub{
+
     transform: scale(0.59);
     display: inline-block;
     vertical-align: middle;
     height: 100%;
-    z-index: 2;
 
 }
 .faceBook{
