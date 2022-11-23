@@ -164,11 +164,11 @@ input{
 
 
 .card{
-    height: 200px;
-    width: 400px;
+    height: 250px;
+    width: 250px;
     background-color: rgba(255,255,255, 0.02);
     border: 1px solid rgba(255,255,255, 0.05);
-    border-radius: 10px;
+    border-radius: 500px;
     cursor: pointer;
     position: relative;
     text-align: center;
@@ -188,35 +188,25 @@ input{
     }
 }
 
-button{
-    height: 200px;
-    width: 400px;
-    background-color: rgba(255,255,255, 0.009);
-    border: 1px solid rgba(255,255,255, 0.05);
-    border-radius: 10px;
-    cursor: pointer;
-    position: relative;
-    text-align: center;
-    z-index: 1;
+
+
+.Plane{
+
+    transform: scale(0.49) rotate(90deg);
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+
 
 }
-
-.gitHub{
-
-    transform: scale(0.59);
+.Chat{
+    transform: scale(0.49);
     display: inline-block;
     vertical-align: middle;
     height: 100%;
 
 }
-.faceBook{
-    transform: scale(0.59);
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-
-}
-.linkedIn{
+.User{
     position: relative;
     transform: scale(0.49);
     display: inline-block;
@@ -224,31 +214,7 @@ button{
     height: 100%;
 
 }
-.instaGram{
-    position: relative;
-    transform: scale(0.52);
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
 
-
-}
-.eMail{
-
-    transform: scale(0.59);
-    display: inline-block;
-    vertical-align: middle;
-    height: 100%;
-}
-
-.disCord{
-    display: inline-block;
-    vertical-align: middle;
-    transform: scale(0.59);
-    height: 100%;
-
-
-}
 
 .card:hover{
     animation: cardAnimation 0.2s forwards;
@@ -272,30 +238,44 @@ button{
     }
 
 }
-.gitHub:hover{
-    animation: imgAnimation 0.7s forwards;
+.Plane:hover{
+    animation: PlaneImage 0.7s forwards;
 
 }
-.faceBook:hover{
-    animation: imgAnimation 0.7s forwards;
+
+@keyframes PlaneImage {
+    from{
+        transform: translateY(0px) scale(0.59) rotate(90deg);
+    }
+    to{
+        transform: translateY(20px) scale(0.59) rotate(90deg);
+    }
+}
+.Chat:hover{
+    animation: ChatImage 0.7s forwards;
 }
 
-.linkedIn:hover{
-    animation: imgAnimation2 0.8s;
+@keyframes ChatImage {
+    from{
+        transform: scale(0.49) ;
+    }
+    to{
+        transform: scale(0.59);
+    }
 }
 
-.instaGram:hover{
-    animation: imgAnimation3 0.9s;
+.User:hover{
+    animation: UserImage 0.8s;
 }
 
-.eMail:hover{
-    animation: imgAnimation4 0.7s forwards;
+@keyframes UserImage {
+    from{
+        transform: scale(0.49) ;
+    }
+    to{
+        transform: scale(0.56);
+    }
 }
-
-.disCord:hover{
-    animation: imgAnimation4 0.7s forwards;
-}
-
 
 @keyframes HiddenTextAnimation {
     from{
@@ -309,63 +289,6 @@ button{
 
 }
 
-@keyframes imgAnimation {
-
-    from{
-        height: 100%;
-        transform: rotate(0deg) scale(0.69);
-        filter: motionBlur(0px);
-    }
-
-    to{
-        height: 100%;
-        transform: rotate(360deg) scale(0.59);
-        filter: motionBlur(5px);
-    }
-
-}
-
-
-@keyframes imgAnimation2 {
-
-    from{
-        height: 100%;
-        transform: rotate(0deg) scale(0.69);
-    }
-
-    to{
-        height: 100%;
-        transform: rotate(360deg) scale(0.49);
-    }
-
-}
-@keyframes imgAnimation3 {
-
-    from{
-        height: 100%;
-        transform: rotate(0deg) scale(0.72);
-    }
-
-    to{
-        height: 100%;
-        transform: rotate(360deg) scale(0.52);
-    }
-
-}
-
-@keyframes imgAnimation4 {
-
-    from{
-        height: 100%;
-        transform: rotate(0deg) scale(0.79);
-    }
-
-    to{
-        height: 100%;
-        transform: rotate(360deg) scale(0.59);
-    }
-
-}
 
 
 
