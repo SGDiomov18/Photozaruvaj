@@ -28,6 +28,8 @@ div.container
 
 
 
+
+
 div.container a
 {
     color: #c5c4c4;
@@ -41,7 +43,7 @@ div.container a
 
 
 }
-.HomeDiv{
+.HomeDiv {
 
     position: absolute;
     transform: translateX(-80px) scale(0.08);
@@ -50,27 +52,86 @@ div.container a
     opacity: 0.03;
 
 }
-.ShopDiv{
+.ShopDiv {
     position: absolute;
     transform: translateX(50px) scale(0.08);
     top: -240px;
     left: -300px;
     opacity: 0.03;
 }
+
+
+
 .AboutDiv{
     position: absolute;
     transform: translateX(180px) scale(0.08);
     left: -390px;
     top: -240px;
     opacity:0.03;
+
 }
+
+
+
 .ContactDiv{
     position: absolute;
     transform: translateX(310px) scale(0.1);
     left: -480px;
     top: -240px;
     opacity:0.03;
+
 }
+
+
+
+@keyframes HomeNavBarAnimation{
+
+    from{
+        opacity: 0;
+
+    }
+    to{
+        opacity: 0.03;
+
+    }
+
+}
+@keyframes HomeNavBarAnimation2{
+
+    from{
+        opacity: 0;
+        transform: translateY(-200px) translateX(50px) scale(0.08);
+    }
+    to{
+        opacity: 0.03;
+        transform: translateY(0px) translateX(50px) scale(0.08);
+    }
+
+}
+@keyframes HomeNavBarAnimation3{
+    from{
+        opacity: 0;
+        transform: translateY(-200px) translateX(180px) scale(0.08);
+    }
+    to{
+        opacity: 0.03;
+        transform: translateY(0px)translateX(180px) scale(0.08);
+    }
+
+}
+@keyframes HomeNavBarAnimation4{
+
+    from{
+        opacity: 0;
+        transform: translateY(-200px) translateX(310px) scale(0.1);
+    }
+    to{
+        opacity: 0.03;
+        transform: translateY(0px) translateX(310px) scale(0.1);
+    }
+
+}
+
 
 .HomeDiv:hover{
 
